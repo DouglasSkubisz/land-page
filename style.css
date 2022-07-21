@@ -1,0 +1,162 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'AmsterdamOne-eZ12l.ttf';
+    src: url(fonts/AmsterdamOne-eZ12l.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'poppins-medium.ttf';
+    src: url(fonts/poppins-medium.ttf);
+}
+
+:root{
+    --cor0: #FEFE34;
+    --cor1: #F2E205;
+    --cor2: #F2B705;
+    --cor3: #F27405;
+    --cor4: #F24405;
+    --cor5: #F2D680;
+    --cor6: #F29544;
+    --cor7: #BF612A;
+    --cor8: #612B11;
+    --cor9: #260401;
+
+    --font1: 'AmsterdamOne-eZ12l.ttf';
+    --font2: 'poppins-medium.ttf';
+}
+body{
+    background-image:url(imagem/fundo3.png), linear-gradient(to right, var(--cor4) , var(--cor4));
+    background-size: cover;
+    color: white;    
+    font-family: var(--font2);
+    margin:0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+h1{
+    font-family: var(--font1);
+    font-size: 2.6em;
+    color: var(--cor9);
+    margin-left: 18px;
+}
+.liheader{
+    display: inline-block;
+    color: var(--cor9);
+    margin: 0px 8px;
+    font-size: 1.3em;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 10px;
+    border-radius: 12px;
+}
+.liheader:hover{
+    color: var(--cor5);
+    border: 2px solid var(--cor5);
+    background-color: #260401da;
+    transition: 0.7s;
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+section{
+    margin-top: 20px;
+    background: #260401c0;
+    border: 1px solid #f2d6808f;
+    border-radius: 10px;
+    margin-right: 15px;
+    padding: 30px;
+    max-width: 50%;
+}
+section p {
+    line-height: 1.8em;
+    color: white;
+}
+h2{
+    color: var(--cor1);
+    font-size: 2em;
+    line-height: 3em;
+}
+article{
+    background: #260401c0;
+    margin-top: 20px;
+    border: 1px solid #f2d6808f;
+    border-radius: 10px;
+    margin-left: 15px;
+    padding: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 3em 0px;
+}
+.form{
+    align-self: center;
+    text-align: center;
+    width: 70%;
+    margin-top: 7px;
+    padding: 9px;
+    outline: none;
+    border-radius: 7px;
+    font-family: var(--font2);
+    font-size: 1.2em;
+}
+.enviar{
+    font-weight: bold;
+    color: var(--cor9);
+    border: 1px solid transparent;
+    background: var(--cor0);
+}
+.enviar:hover{
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.animation {
+    height: 900px;
+    width: 500px;    
+    background-image: url(imagem/violaopreto2.png),  url(imagem/n5.png), url(imagem/n5.png);
+    background-repeat: no-repeat,  repeat-x, repeat-x;
+    background-position: center 50%,  0 8%, 0 90%;
+    background-size: 200px,  260px, 260px;
+    animation: 200s parallax infinite linear;
+    color: #f0ffff;
+    text-align: center;
+  }
+  @keyframes parallax {
+    100% {
+      background-position: 50%,  -2400px 8%, 2400px 90%;
+    }
+  }
+  footer p{
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: var(--cor9);
+  }
+  .ulfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .lifooter{
+    list-style-type: none;
+    margin: 0px 1.2em;
+    font-size: 2.3em;
+  }
+  .fa-brands{
+    color: var(--cor9);
+  }
+  .fa-brands:hover{
+    color: var(--cor5);
+    text-shadow: 0px 0px 10px var(--cor9);
+  }
+
