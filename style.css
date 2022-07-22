@@ -28,11 +28,13 @@
     --font2: 'poppins-medium.ttf';
 }
 body{
-    background-image:url(imagem/fundo3.png), linear-gradient(to right, var(--cor4) , var(--cor4));
-    background-size: cover;
     color: white;    
     font-family: var(--font2);
     margin:0 auto;
+}
+.background{
+    background-image:url(imagem/fundo3.png), linear-gradient(to right, #d15426 ,#d35628);
+    background-size: cover;
 }
 header{
     display: flex;
