@@ -1,6 +1,6 @@
 @charset "UTF-8";
 *{
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 @font-face{
     font-family: 'AmsterdamOne-eZ12l.ttf';
@@ -38,7 +38,6 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 h1{
     font-family: var(--font1);
@@ -72,25 +71,25 @@ section{
     background: #260401c0;
     border: 1px solid #f2d6808f;
     border-radius: 10px;
-    margin-right: 15px;
     padding: 30px;
-    max-width: 50%;
+    max-width: 65%;
 }
 section p {
     line-height: 1.8em;
     color: white;
+    margin: 20px 0px;
 }
 h2{
     color: var(--cor1);
     font-size: 2em;
     line-height: 3em;
+    margin: 20px 0px;
 }
 article{
     background: #260401c0;
     margin-top: 20px;
     border: 1px solid #f2d6808f;
     border-radius: 10px;
-    margin-left: 15px;
     padding: 30px;
 }
 form{
@@ -121,7 +120,7 @@ form{
     transition: 0.6s;
 }
 .animation {
-    height: 900px;
+    height: 800px;
     width: 500px;    
     background-image: url(imagem/violaopreto2.png),  url(imagem/n5.png), url(imagem/n5.png);
     background-repeat: no-repeat,  repeat-x, repeat-x;
@@ -160,3 +159,149 @@ form{
     text-shadow: 0px 0px 10px var(--cor9);
   }
 
+@media screen and (min-width: 320px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1{
+        font-size: 2.4em;
+        margin: 5px;
+    }
+    .ulheader{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    .liheader{    
+        font-size: 1.2em;
+        margin: 0px 0px;
+    }
+    article{
+        display: none;
+    }
+    section{
+        margin: auto;
+        margin-top: 20px;      
+        padding: 30px;
+        max-width: 94%;
+    }
+    section p {
+        line-height: 1.8em;
+        color: white;
+    }
+    h2{
+        font-size: 1.6em;
+        line-height: 1.5em;
+    }
+    .form{        
+        width: 100%;        
+    }
+    footer p{
+        font-size: 1.5em;
+        margin: 0px 15px 15px 15px;
+      }    
+    .lifooter{
+        list-style-type: none;
+        margin: 0px 1.2em;
+        font-size: 2em;
+      }
+}
+@media screen and (min-width: 950px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    h1{
+        font-size: 2.4em;
+        margin: 5px;
+    }
+    .ulheader{
+        display: flex;
+        flex-direction: row;        
+        margin: 0px;
+        padding: 0px;
+    }
+    .liheader{            
+        font-size: 1.2em;
+        margin: 10px 0px;
+    }
+    main{
+        margin: 10px 50px;
+    }
+    article{
+        display: flex;
+        max-width: 35%;
+    }
+    section{
+        margin-top: 20px;      
+        padding: 30px;
+        max-width: 60%;
+        min-height: 800px;
+    } 
+    .form{        
+        width: 90%;        
+    }   
+    }
+    
+    @media screen and (min-width: 1280px){
+        body{
+            background-image:url(imagem/fundo3.png), linear-gradient(to right, #d15426 ,#d35628);
+            background-size: cover;
+            color: white;    
+            font-family: var(--font2);
+            margin:0 auto;
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0px;
+        }
+        h1{
+            font-size: 2.6em;            
+        }
+        .liheader{
+            display: inline-block;
+            color: var(--cor9);
+            margin: 0px 8px;
+            font-size: 1.3em;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 10px;
+            border-radius: 12px;
+        }
+        .liheader:hover{
+            color: var(--cor5);
+            border: 2px solid var(--cor5);
+            background-color: #260401da;
+            transition: 0.7s;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+        section{
+            margin: 0;
+            margin-right: 25px;
+            max-width: 60%;
+        }
+        article{
+            margin-left: 25px;
+            min-height: 900px;
+            max-width: 30%;
+        }
+        .form{        
+            width: 70%;        
+        }
+        .lifooter{
+            list-style-type: none;
+            margin: 0px 1.2em;
+            font-size: 2.6em;
+          }
+    }
